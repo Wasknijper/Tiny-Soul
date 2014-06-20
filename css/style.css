@@ -1,0 +1,26 @@
+body {
+	color: #555152;
+}
+
+
+#sidebar-wrapper{
+	color: #EFFFCD;
+	border-right: 1em solid #555152;
+
+}
+
+#sidebar-wrapper p{
+	margin-bottom: 2em;
+}
+
+.mob{
+	margin-bottom: 2em;
+}
+
+.page-content h1{
+	margin-top: 0;
+}
+
+.page-content .row {
+	margin-bottom: 2em;
+}
