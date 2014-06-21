@@ -13,8 +13,11 @@ body {
 	margin-bottom: 2em;
 }
 
-.mob{
-	margin-bottom: 2em;
+#mob{
+	width:100%;
+	height:auto;
+	cursor: pointer;
+	top:10px;
 }
 
 .page-content h1{
@@ -24,3 +27,76 @@ body {
 .page-content .row {
 	margin-bottom: 2em;
 }
+
+.img_container{
+	background-color: white;
+	border: 1em solid #555152;	
+		margin-bottom: 2em;
+	width: 19.6em;
+	height: 19.6em;
+	overflow: hidden;
+}
+
+
+
+@keyframes floating {
+  0% {
+   transform:translateY(-0.2em);
+  }
+
+  45%{
+  	transform:translateY(-1.4em);
+  }
+
+  50% {
+    transform:translateY(-1.5em);
+  }
+
+  55% {
+  	transform:translateY(-1.4em);
+  }
+
+  100% {
+   transform:translateY(-0.2em);
+  }
+}
+
+@-webkit-keyframes floating {
+  0% {
+   transform:translateY(-2em);
+  }
+
+  45%{
+  	transform:translateY(-3.4em);
+  }
+
+  50% {
+    transform:translateY(-3.5em);
+  }
+
+  55% {
+  	transform:translateY(-3.4em);
+  }
+
+  100% {
+   transform:translateY(-2em);
+  }
+}
+
+
+.floating{
+	-moz-animation-duration: 5000ms;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-play-state:running;
+	-moz-animation-name:floating;
+
+	-webkit-animation-duration: 3000ms;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-play-state:running;
+	-webkit-animation-name:floating;
+
+	animation-duration: 3000ms;
+	animation-iteration-count:infinite;
+	animation-play-state:running;
+	aninmation-name:floating;
+};
