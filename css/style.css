@@ -85,7 +85,7 @@ body {
 
 
 .floating{
-	-moz-animation-duration: 5000ms;
+	-moz-animation-duration: 3000ms;
 	-moz-animation-iteration-count:infinite;
 	-moz-animation-play-state:running;
 	-moz-animation-name:floating;
@@ -100,3 +100,35 @@ body {
 	animation-play-state:running;
 	aninmation-name:floating;
 };
+
+@-webkit-keyframes shake {
+    0%, 100% {-webkit-transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);}
+    20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);}
+}
+@keyframes shake {
+    0%, 100% {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+    20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+.shake {
+    -Webkit-animation-name: shake;
+    -Webkit-animation-duration: 1.5s;
+	-webkit-animation-iteration-count:infinite;
+
+    -moz-animation-name: shake;
+    -moz-animation-duration: 1.5s;
+	-moz-animation-iteration-count:infinite;
+
+    animation-name: shake;
+    animation-duration: 1.5s;
+	animation-iteration-count:infinite;
+}
+
+#henchman span {
+	font-weight: bold;
+}
+
+#henchman h2 {
+	font-size: 1.5em;
+}

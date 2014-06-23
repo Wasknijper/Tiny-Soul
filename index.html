@@ -25,10 +25,12 @@
 
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
-            <img class='sidebar-brand' src="logo.png"/>  
             <h1>Tiny Soul</h1>  
             <div class="img_container">
                 <img src="" id="mob" class="floating"/> 
+            </div>
+            <div>
+                <p id="mobStatus"> </p>
             </div>
             <p>Tiny Souls Collected: <span id="soulsCollected">0</span></p>
             
@@ -49,19 +51,12 @@
                 </div>
                 <div class="row">
                      <h1>
-                        Upgrades
+                        Hirelings &#38; Upgrades
                     </h1>
-                    <div class="col-md-4">
-                        <p id="storyTxt">Upgrade 1</p>
-                    </div>
-                    <div class="col-md-4">
-                        <p id="storyTxt">Upgrade 2</p>
-                    </div>
-                    <div class="col-md-4">
-                        <p id="storyTxt">Upgrade 3</p>
-                    </div>
-                    <div class="col-md-4">
-                        <p id="storyTxt">Upgrade 4</p>
+                    <div class="col-md-4" id="henchman">
+                        <h2>Henchman</h2>
+                        <p>Does a small amount of damage to your current target.</p>
+                        <p>Costs <span id="costHench"></span> Tiny Souls, you currently own <span id="henchOwned"></span> henchman.</p>
                     </div>
                 </div>
                 <div class="row">
